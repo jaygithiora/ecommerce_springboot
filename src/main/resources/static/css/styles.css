@@ -1,0 +1,28 @@
+body{
+    font-family: "Geologica";
+}
+
+.bg-dark{
+    background-color: rgb(31, 41, 55) !important;
+}
+.navbar-dark .nav-link{
+    color: #fff;
+    border-radius: 0.375rem;
+    margin: 0.375rem;
+}
+.navbar-dark .nav-link.active{
+    background-color: rgb(17, 24, 39) !important;
+}
+.btn-primary{
+    background-color: #ff0084 !important;
+    border-color: #ff0084 !important;
+}
+.btn-outline-primary{
+    color: #ff0084 !important;
+    border-color: #ff0084 !important;
+}
+.btn-outline-primary:hover{
+    color: #fff !important;
+    background-color: #ff0084 !important;
+    border-color: #ff0084 !important;
+}
