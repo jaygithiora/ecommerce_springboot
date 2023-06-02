@@ -13,6 +13,9 @@ body{
 .navbar-dark .nav-link.active{
     background-color: rgb(17, 24, 39) !important;
 }
+.navbar-brand{
+    background-color: #ff0084 !important;
+}
 .btn-primary{
     background-color: #ff0084 !important;
     border-color: #ff0084 !important;
