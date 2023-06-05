@@ -13,7 +13,12 @@ body{
 .navbar-dark .nav-link.active{
     background-color: rgb(17, 24, 39) !important;
 }
+/*
 .navbar-brand{
+    background-color: #ff0084 !important;
+}*/
+
+.bg-primary{
     background-color: #ff0084 !important;
 }
 .btn-primary{
@@ -29,3 +34,11 @@ body{
     background-color: #ff0084 !important;
     border-color: #ff0084 !important;
 }
+.carousel-item{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*
+.carousel-item .content-row{
+    min-height: 80vh;
+}*/

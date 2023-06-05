@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <link rel="stylesheet"  href="css/styles.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet"  href="css/styles.css">
 </head>
 
 <body>
@@ -55,7 +56,7 @@
     <div class="container-fluid bg-white border-bottom">
         <div class="container">
             <div class="row pt-2 pb-2 d-flex align-items-center">
-                <div class="col-sm-3">E-COMMERCE</div>
+                <div class="col-sm-3"><i class='fas fa-shopping-cart'></i> E-COMMERCE</div>
                 <div class="col-sm-6">
                     <table class="w-100 border">
                         <tr>
@@ -76,9 +77,10 @@
             </div>
         </div>
     </div>
+    <!--start navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#">All Categories</a>
+            <a class="navbar-brand" href="#">E-COMMERCE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -119,14 +121,529 @@
                         </ul>
                     </li>
                 </ul>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="btn btn-primary" href="#">Link</a>
+                        <a class="nav-link" aria-current="page" href="#"><i class="far fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><i class="far fa-heart"></i><span class='badge badge-pill bg-primary'>0</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><i class="fas fa-shopping-cart"></i><span class='badge badge-pill bg-primary'>2</span></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- end navbar -->
+    <!-- start slider -->
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('images/image1.jpg');">
+                <div class="container mt-5 mb-5 pt-5 pb-5">
+                    <div class="row content-row d-flex align-content-center">
+                        <div class="col-sm-6">
+                            <p>Jiekee form moja motooo</p>
+                            <h2>MEN'S WEAR</h2>
+                            <button class="btn btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active" style="background-image: url('images/image4.jpg');">
+                <div class="container mt-5 mb-5 pt-5 pb-5">
+                    <div class="row content-row d-flex align-content-center">
+                        <div class="col-sm-6">
+                            <p>Jiekee form moja motooo</p>
+                            <h2>WOMEN'S WEAR</h2>
+                            <button class="btn btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="carousel-item active" style="background-image: url('images/image3.jpg');">
+                <div class="container mt-5 mb-5 pt-5 pb-5">
+                    <div class="row content-row d-flex align-content-center">
+                        <div class="col-sm-6">
+                            <p>Jiekee form moja motooo</p>
+                            <h2>CHILDREN'S WEAR</h2>
+                            <button class="btn btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- end slider -->
+
+    <!--Exclusive Products-->
+    <div class="container">
+        <div class="row mt-4 mb-4">
+            <div class="col-sm-12 col-md-6 col-lg-4 pt-2 pb-2 ">
+                <h3>Exclusive Products</h3>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 pt-2 pb-2">
+                <ul class="nav nav-pills flex-column flex-sm-row" id="myTab" role="tablist">
+                    <li class="nav-item flex-sm-fill text-sm-center" role="presentation">
+                      <button class="nav-link active w-100" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">New Arrival</button>
+                    </li>
+                    <li class="nav-item flex-sm-fill text-sm-center" role="presentation">
+                      <button class="nav-link w-100" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Best Sellers</button>
+                    </li>
+                    <li class="nav-item flex-sm-fill text-sm-center" role="presentation">
+                      <button class="nav-link w-100" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Featured</button>
+                    </li>
+                    <li class="nav-item flex-sm-fill text-sm-center" role="presentation">
+                      <button class="nav-link w-100" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Special Offer</button>
+                    </li>
+                  </ul>
+            </div>
+            <div class="col-sm-12 border-bottom mb-3"></div>
+            
+            <div class="col-sm-12">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <div class="row">
+                            
+                            <div class="col-sm-3 d-flex align-items-stretch">
+                                <div class="card shadow-sm border-0 w-100">
+                                    <img src="images/shoes/shoes2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Boots</h5>
+                                        <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                        <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3 d-flex align-items-stretch">
+                                <div class="card shadow-sm border-0 w-100">
+                                    <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Boots</h5>
+                                        <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                        <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3 d-flex align-items-stretch">
+                                <div class="card shadow-sm border-0 w-100">
+                                    <img src="images/shoes/shoes2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Boots</h5>
+                                        <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                        <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3 d-flex align-items-stretch">
+                                <div class="card shadow-sm border-0 w-100">
+                                    <img src="images/shoes/shoes2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Boots</h5>
+                                        <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                        <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+                  </div>
+            </div>
+
+        </div>
+    </div>
+      <!-- end exclusive products-->
+
+      <!-- Featured Products -->
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-12 mb-3 border-bottom">
+                <h3>Featured Products</h3></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow-sm border-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/shoes/shoes3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Boots</h5>
+                                <span class='text-danger'>$54.00</span> <span class='text-muted'><del>$99.00</del></span> <span class='text-success'>25% off</span><br>
+                                <span class="text-warning"><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half'></i></span>(22)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+      <!-- end featured products -->
+
+      <!--Subscribe to news letter-->
+      <div class="container-fluid bg-dark">
+        <div class="container">
+            <div class="row mt-4 mb-4 pt-4 pb-4 text-white d-flex align-items-center">
+                <div class="col-sm-4 p-2">
+                    <h3>Subscribe to Our Newsletter</h3>
+                </div>
+                <div class="col-sm-8 p-2">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter Email address">
+                        <button class="btn btn-primary"><i class='fas fa-subscribe'></i> Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- end subscribe to news letter-->
+
+      <!-- footer -->
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, 
+                    eveniet quasi doloribus saepe explicabo laudantium enim soluta 
+                    deleniti maxime quod provident suscipit incidunt! Incidunt earum 
+                    esse omnis dicta. Reprehenderit, eum!</p>
+            </div>
+            <div class="col-sm-4">
+                <h4>Useful Links</h4>
+                <a href="#" class="nav-link">About Us</a><br>
+                <a href="#" class="nav-link">FAQ</a><br>
+                <a href="#" class="nav-link">Location</a><br>
+                <a href="#" class="nav-link">Affiliates</a><br>
+                <a href="#" class="nav-link">Contact</a>
+            </div>
+            <div class="col-sm-4">
+                <h4>My Account</h4>
+                <a href="#" class="nav-link">About Us</a><br>
+                <a href="#" class="nav-link">FAQ</a><br>
+                <a href="#" class="nav-link">Location</a><br>
+                <a href="#" class="nav-link">Affiliates</a><br>
+                <a href="#" class="nav-link">Contact</a>
+            </div>
+            <div class="col-sm-12">
+                <hr>
+                All rights reserved &copy; 2022
+            </div>
+        </div>
+      </div>
+      <!-- end footer -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
